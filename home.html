@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <div id="body">
+            <div id="d">
+                <div id="d1">
+                    <p class="p">Enter Temperature</p>
+                    <br>
+                    <p class="p" style="font-size: 20px;">Temperature</p>
+                    <form>
+                        <div >
+                            <input for='inttemp' type="text" id="inp">
+                            <select class="drop" id="drop" name="inttemp">
+                                <option>°C</option>
+                                <option>°F</option>
+                                <option>K</option>
+                            </select>
+                        </div>
+                    </form>
+                    <br>
+                    <br>
+                    <p class="p" style="font-size: 20px;">Convert In</p>
+                    <select class="drop2" id="drop2">
+                        <option>Celsius (°C)</option>
+                        <option>kelvin (K)</option>
+                        <option>Fahrenheit (°F)</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <button id='but' onclick='convert()'type="submit">Convert</button>
+                </div>
+                <div id="d2">
+                    <div style="display: flex;justify-content:center;color:rgb(14, 14, 14);overflow: auto;">
+                        <div id='outn'style="font-size: 60px;"><b>Enter Temperature</b></div>
+                        <div id='outd'style="font-size: 30px;"><b></b></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="convert.js"></script>
+    </body>
+</html>
